@@ -31,7 +31,14 @@ describe 'fizzbuzz' do
   end
 end
 
+describe 'fizzbuzz' do
+  it 'returns "buzz" when passed a multiple of 5' do
+    expect(fizzbuzz(10)).to eq 'buzz'
+    expect(fizzbuzz(20)).to eq 'buzz'
+  end
+end
 
+# improvement opportunity - how do you adjust rspec to run all the tests
 
 # describe "Q1. FizzBuzz to 20" do
 #   let(:expected) { ["1",
