@@ -38,6 +38,14 @@ describe 'fizzbuzz' do
   end
 end
 
+describe 'fizzbuzz' do
+  it 'returns "nil" when passed anything which isn\'t an integer' do
+    expect(fizzbuzz("string")).to eq nil
+    expect(fizzbuzz(1.5)).to eq nil
+    expect(fizzbuzz(:symbol)).to eq nil
+  end
+end
+
 # improvement opportunity - how do you adjust rspec to run all the tests
 
 # describe "Q1. FizzBuzz to 20" do
