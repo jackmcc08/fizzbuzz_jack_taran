@@ -1,13 +1,16 @@
 def fizzbuzz(number)
   return if !(number.is_a? Integer)
 
-  if number == 15
-    'fizzbuzz'
+  if number % 3 == 0 && number % 5 == 0
+    'FizzBuzz'
   elsif number % 3 == 0
-    'fizz'
+    'Fizz'
   elsif number % 5 == 0
-    'buzz'
+    'Buzz'
   else
     number
   end
+
 end
+
+(1..20).each {|number| puts fizzbuzz(number)}
