@@ -1,4 +1,4 @@
-class Object
+class Integer
   def fizzbuzz
     return if !(self.is_a? Integer)
 
