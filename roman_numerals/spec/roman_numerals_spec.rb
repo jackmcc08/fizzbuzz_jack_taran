@@ -39,3 +39,9 @@ describe 'solution' do
     expect(solution(1500)).to eq 'MD'
   end
 end
+
+describe 'solution' do
+  it 'outputs "IV" when the input is 4' do
+    expect(solution(4)).to eq 'IV'
+  end
+end
